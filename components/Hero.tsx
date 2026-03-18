@@ -65,9 +65,20 @@ export default function Hero() {
             backgroundSize: "80px 80px",
           }}
         />
-        <div className="absolute bottom-32 left-16 h-48 w-48 rounded-full opacity-10" style={{ border: "12px solid var(--gold)" }} />
-        <div className="absolute bottom-20 left-10 h-32 w-32 rounded-full opacity-5" style={{ border: "8px solid var(--gold)" }} />
-        <div className="absolute left-8 top-40 font-display text-8xl opacity-[0.06]" style={{ color: "var(--gold)" }}>LIFT</div>
+        <div
+          className="absolute bottom-32 left-16 h-48 w-48 rounded-full opacity-10"
+          style={{ border: "12px solid var(--gold)" }}
+        />
+        <div
+          className="absolute bottom-20 left-10 h-32 w-32 rounded-full opacity-5"
+          style={{ border: "8px solid var(--gold)" }}
+        />
+        <div
+          className="absolute left-8 top-40 font-display text-8xl opacity-[0.06]"
+          style={{ color: "var(--gold)" }}
+        >
+          LIFT
+        </div>
       </div>
 
       <div
@@ -82,13 +93,25 @@ export default function Hero() {
         <div
           className="absolute inset-0 opacity-[0.07]"
           style={{
-            backgroundImage: "radial-gradient(circle, rgba(197,255,62,0.7) 1px, transparent 1px)",
+            backgroundImage:
+              "radial-gradient(circle, rgba(197,255,62,0.7) 1px, transparent 1px)",
             backgroundSize: "40px 40px",
           }}
         />
-        <div className="absolute right-16 top-32 h-40 w-40 rounded-full opacity-10" style={{ border: "2px solid var(--lime)" }} />
-        <div className="absolute right-10 top-24 h-60 w-60 rounded-full opacity-5" style={{ border: "1px solid var(--lime)" }} />
-        <div className="absolute bottom-40 right-8 font-display text-8xl opacity-[0.06]" style={{ color: "var(--lime)" }}>SIP</div>
+        <div
+          className="absolute right-16 top-32 h-40 w-40 rounded-full opacity-10"
+          style={{ border: "2px solid var(--lime)" }}
+        />
+        <div
+          className="absolute right-10 top-24 h-60 w-60 rounded-full opacity-5"
+          style={{ border: "1px solid var(--lime)" }}
+        />
+        <div
+          className="absolute bottom-40 right-8 font-display text-8xl opacity-[0.06]"
+          style={{ color: "var(--lime)" }}
+        >
+          SIP
+        </div>
       </div>
 
       <div
@@ -96,20 +119,31 @@ export default function Hero() {
         className="absolute top-0 bottom-0 z-10 w-px"
         style={{
           left: "40%",
-          background: "linear-gradient(to bottom, transparent 0%, var(--gold) 30%, var(--lime) 70%, transparent 100%)",
+          background:
+            "linear-gradient(to bottom, transparent 0%, var(--gold) 30%, var(--lime) 70%, transparent 100%)",
           opacity: 0.5,
         }}
       />
 
-      <div className="absolute inset-0 z-20 flex flex-col items-center justify-center px-6 text-center" style={{ paddingTop: "80px", paddingBottom: "90px" }}>
-        <div className="fade-up mb-8 text-xs uppercase tracking-[0.5em]" style={{ color: "var(--gold)" }}>
+      <div
+        className="absolute inset-0 z-20 flex flex-col items-center justify-center px-6 text-center"
+        style={{ paddingTop: "80px", paddingBottom: "90px" }}
+      >
+        <div
+          className="fade-up mb-8 text-xs uppercase tracking-[0.5em]"
+          style={{ color: "var(--gold)" }}
+        >
           Established 2024 — New Delhi
         </div>
 
         <h1 className="font-display leading-none">
           <div
             className="fade-up-delay-1 block"
-            style={{ fontSize: "clamp(4.5rem, 13vw, 13rem)", color: "var(--cream)", lineHeight: 0.88 }}
+            style={{
+              fontSize: "clamp(4.5rem, 13vw, 13rem)",
+              color: "var(--cream)",
+              lineHeight: 0.88,
+            }}
           >
             TRAIN.
           </div>
@@ -119,7 +153,7 @@ export default function Hero() {
               fontSize: "clamp(4.5rem, 13vw, 13rem)",
               color: "transparent",
               lineHeight: 0.88,
-              WebkitTextStroke: "2px var(--gold)",
+              WebkitTextStroke: "clamp(0.5px, 0.4vw, 2px) var(--gold)",
               filter: "drop-shadow(0 0 12px rgba(212,168,83,0.25))",
             }}
           >
@@ -127,14 +161,22 @@ export default function Hero() {
           </div>
           <div
             className="fade-up-delay-3 block"
-            style={{ fontSize: "clamp(4.5rem, 13vw, 13rem)", color: "var(--lime)", lineHeight: 0.88 }}
+            style={{
+              fontSize: "clamp(4.5rem, 13vw, 13rem)",
+              color: "var(--lime)",
+              lineHeight: 0.88,
+            }}
           >
             REPEAT.
           </div>
         </h1>
 
-        <p className="fade-up-delay-4 mt-6 max-w-sm font-editorial text-lg italic" style={{ color: "var(--cream-dim)" }}>
-          You didn&apos;t come here to settle. Not at the rack. Not at the table.
+        <p
+          className="fade-up-delay-4 mt-6 max-w-sm font-editorial text-lg italic"
+          style={{ color: "var(--cream-dim)" }}
+        >
+          You didn&apos;t come here to settle. Not at the rack. Not at the
+          table.
         </p>
 
         <div className="fade-up-delay-4 mt-8 flex flex-wrap justify-center gap-4">
@@ -156,12 +198,17 @@ export default function Hero() {
             href="/menu"
             data-hover
             className="px-8 py-3.5 text-sm uppercase tracking-[0.3em] transition-all duration-200"
-            style={{ border: "1px solid rgba(232,224,208,0.35)", color: "var(--cream)" }}
+            style={{
+              border: "1px solid rgba(232,224,208,0.35)",
+              color: "var(--cream)",
+            }}
             onMouseEnter={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = "var(--cream)";
+              (e.currentTarget as HTMLElement).style.borderColor =
+                "var(--cream)";
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.borderColor = "rgba(232,224,208,0.35)";
+              (e.currentTarget as HTMLElement).style.borderColor =
+                "rgba(232,224,208,0.35)";
             }}
           >
             Explore Menu
@@ -184,15 +231,39 @@ export default function Hero() {
           { num: "6AM", label: "Opens Daily" },
         ].map((s) => (
           <div key={s.label} className="text-center">
-            <div className="font-display text-xl lg:text-2xl" style={{ color: "var(--gold)" }}>{s.num}</div>
-            <div className="text-xs uppercase tracking-widest" style={{ color: "var(--cream-dim)" }}>{s.label}</div>
+            <div
+              className="font-display text-xl lg:text-2xl"
+              style={{ color: "var(--gold)" }}
+            >
+              {s.num}
+            </div>
+            <div
+              className="text-xs uppercase tracking-widest"
+              style={{ color: "var(--cream-dim)" }}
+            >
+              {s.label}
+            </div>
           </div>
         ))}
       </div>
 
-      <div className="absolute bottom-24 right-8 z-20 hidden flex-col items-center gap-2 lg:flex" style={{ color: "var(--cream-dim)" }}>
-        <span className="text-xs uppercase tracking-[0.3em]" style={{ writingMode: "vertical-rl" }}>Scroll</span>
-        <div className="mt-1 h-10 w-px" style={{ background: "linear-gradient(to bottom, var(--cream-dim), transparent)" }} />
+      <div
+        className="absolute bottom-24 right-8 z-20 hidden flex-col items-center gap-2 lg:flex"
+        style={{ color: "var(--cream-dim)" }}
+      >
+        <span
+          className="text-xs uppercase tracking-[0.3em]"
+          style={{ writingMode: "vertical-rl" }}
+        >
+          Scroll
+        </span>
+        <div
+          className="mt-1 h-10 w-px"
+          style={{
+            background:
+              "linear-gradient(to bottom, var(--cream-dim), transparent)",
+          }}
+        />
       </div>
     </section>
   );
