@@ -174,8 +174,3 @@ body {
   opacity: 1;
   transform: translateX(0);
 }
-@media (pointer: coarse) {
-  .custom-cursor {
-    display: none;
-  }
-}

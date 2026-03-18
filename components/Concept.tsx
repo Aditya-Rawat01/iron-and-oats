@@ -72,11 +72,7 @@ export default function Concept() {
               WHERE THE
               <br className="lg:hidden" />
               <span
-                style={{
-                  color: "transparent",
-                  WebkitTextStroke: "1px var(--gold)",
-                }}
-              >
+              className="text-gold">
                 {" "}
                 WORK GETS
               </span>

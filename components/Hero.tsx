@@ -148,13 +148,10 @@ export default function Hero() {
             TRAIN.
           </div>
           <div
-            className="fade-up-delay-2 block"
+            className="fade-up-delay-2 block text-gold"
             style={{
               fontSize: "clamp(4.5rem, 13vw, 13rem)",
-              color: "transparent",
               lineHeight: 0.88,
-              WebkitTextStroke: "clamp(0.5px, 0.4vw, 2px) var(--gold)",
-              filter: "drop-shadow(0 0 12px rgba(212,168,83,0.25))",
             }}
           >
             FUEL.

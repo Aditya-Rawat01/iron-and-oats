@@ -90,11 +90,9 @@ export default function Footer() {
 
       <div className="overflow-hidden px-8 py-4 lg:px-20" style={{ borderTop: "1px solid rgba(212,168,83,0.08)" }}>
         <div
-          className="font-display w-full select-none text-center leading-none"
+          className="font-display w-full select-none text-center leading-none text-gold shadow-2xl"
           style={{
             fontSize: "clamp(4rem, 12vw, 11rem)",
-            color: "transparent",
-            WebkitTextStroke: "1px rgba(212,168,83,0.12)",
             lineHeight: 1,
           }}
         >

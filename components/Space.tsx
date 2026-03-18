@@ -57,10 +57,7 @@ export default function Space() {
             <span style={{ color: "var(--gold)" }}>BEASTS &</span>
             <br />
             <span
-              style={{
-                color: "transparent",
-                WebkitTextStroke: "1px var(--cream)",
-              }}
+              className="text-cream"
             >
               BARISTAS.
             </span>

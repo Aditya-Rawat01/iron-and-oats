@@ -28,7 +28,7 @@ export default function Classes() {
             >
               NO REST 
               <br />
-              <span style={{ color: "transparent", WebkitTextStroke: "1px var(--gold)" }}>FOR THE </span>
+              <span className="text-gold">FOR THE </span>
                DRIVEN.
             </h2>
           </div>

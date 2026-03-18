@@ -1,17 +1,28 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Cursor() {
+  const [enabled, setEnabled] = useState(false);
+
   const dotRef = useRef<HTMLDivElement>(null);
   const ringRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const isCoarse = window.matchMedia("(pointer: coarse)").matches;
+    if (!isCoarse) setEnabled(true); // only enable on desktop
+  }, []);
+
+  useEffect(() => {
+    if (!enabled) return;
+
     const dot = dotRef.current;
     const ring = ringRef.current;
     if (!dot || !ring) return;
 
-    let mouseX = 0, mouseY = 0;
-    let ringX = 0, ringY = 0;
+    let mouseX = 0,
+      mouseY = 0;
+    let ringX = 0,
+      ringY = 0;
     let raf: number;
 
     const onMove = (e: MouseEvent) => {
@@ -46,7 +57,9 @@ export default function Cursor() {
       document.removeEventListener("mousemove", onMove);
       cancelAnimationFrame(raf);
     };
-  }, []);
+  }, [enabled]);
+
+  if (!enabled) return null; // 🚨 THIS is the key
 
   return (
     <>

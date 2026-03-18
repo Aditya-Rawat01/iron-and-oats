@@ -25,7 +25,7 @@ export default function MenuPage() {
               >
                 FUEL WITH
                 <br />
-                <span style={{ color: "transparent", WebkitTextStroke: "1px var(--gold)" }}>INTENT.</span>
+                <span style={{ color: "transparent" }}>INTENT.</span>
               </h1>
             </div>
             <div className="space-y-6">
