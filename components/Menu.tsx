@@ -143,8 +143,8 @@ export default function Menu() {
               The menu balances sharp utility with enough cafe character to feel memorable. Think post-lift bowls that still crave texture, and coffee service that belongs in a modern training club rather than an afterthought counter.
             </p>
           </div>
-          <div className="rounded-[1.75rem] border p-8" style={{ borderColor: "rgba(212,168,83,0.12)", background: "var(--black)" }}>
-            <div className="mb-3 text-xs uppercase tracking-[0.4em]" style={{ color: "var(--lime)" }}>
+          <div className="rounded-[1.75rem] border p-8 flex flex-col gap-3 justify-center" style={{ borderColor: "rgba(212,168,83,0.12)", background: "var(--black)" }}>
+            <div className="mb-3 text-md uppercase tracking-[0.4em]" style={{ color: "var(--lime)" }}>
               Service Notes
             </div>
             <p className="text-sm leading-relaxed" style={{ color: "var(--cream-dim)" }}>

@@ -61,7 +61,7 @@ export default function Testimonials() {
 
         {/* CTA strip */}
         <div
-          className="mt-16 flex flex-col lg:flex-row items-center justify-between gap-8 p-10"
+          className="mt-16 flex flex-col lg:flex-row items-center justify-between gap-8 p-6 md:p-10"
           style={{ border: "1px solid rgba(212,168,83,0.2)" }}
         >
           <div>
@@ -74,11 +74,11 @@ export default function Testimonials() {
               <span style={{ color: "var(--lime)" }}>YOUR RITUAL?</span>
             </h3>
           </div>
-          <div className="flex gap-4 flex-wrap">
+          <div className="flex flex-col md:flex-row gap-4">
             <a
               href="#membership"
               data-hover
-              className="text-sm tracking-[0.3em] uppercase px-10 py-4 font-medium transition-all duration-200"
+              className="text-sm tracking-[0.3em] uppercase px-10 py-4 font-medium transition-all duration-200 text-center"
               style={{ background: "var(--gold)", color: "var(--black)" }}
               onMouseEnter={(e) => {
                 (e.currentTarget as HTMLElement).style.background = "var(--lime)";
@@ -92,7 +92,7 @@ export default function Testimonials() {
             <a
               href="#"
               data-hover
-              className="text-sm tracking-[0.3em] uppercase px-10 py-4 transition-all duration-200"
+              className="text-sm tracking-[0.3em] uppercase px-10 py-4 transition-all duration-200 text-center"
               style={{ border: "1px solid rgba(232,224,208,0.3)", color: "var(--cream)" }}
             >
               Free Trial Class

@@ -8,8 +8,8 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState(0);
 
   return (
-    <section id="faq" className="px-8 py-16 lg:px-20 lg:py-24" style={{ background: "var(--black)" }}>
-      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20">
+    <section id="faq" className="min-h-[60vh] px-8 py-16 lg:px-20 lg:py-24" style={{ background: "var(--black)" }}>
+      <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:gap-20 ">
         <div className="reveal-block">
           <div className="mb-4 text-xs uppercase tracking-[0.5em]" style={{ color: "var(--gold)" }}>
             FAQ
@@ -27,7 +27,7 @@ export default function FAQ() {
           </p>
         </div>
 
-        <div style={{ borderTop: "1px solid rgba(212,168,83,0.15)" }}>
+        <div className="flex flex-col items-center justify-end">
           {faqs.map((item, index) => {
             const isOpen = openIndex === index;
 
@@ -40,7 +40,7 @@ export default function FAQ() {
                 style={{ borderBottom: "1px solid rgba(212,168,83,0.12)" }}
               >
                 <div className="flex items-start justify-between gap-6">
-                  <div className="font-display text-2xl leading-none lg:text-3xl" style={{ color: "var(--cream)" }}>
+                  <div className="font-display text-2xl leading-none" style={{ color: "var(--cream)" }}>
                     {item.question}
                   </div>
                   <div className="text-2xl leading-none" style={{ color: isOpen ? "var(--lime)" : "var(--gold)" }}>

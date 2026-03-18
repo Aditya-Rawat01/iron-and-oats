@@ -72,15 +72,14 @@ body {
 .font-display { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.02em; }
 .font-editorial { font-family: 'Cormorant Garamond', serif; }
 
-@keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+.marquee-track {
+  overflow: hidden;
 }
-.marquee-track { overflow: hidden; }
+
 .marquee-inner {
   display: flex;
-  animation: marquee 28s linear infinite;
   white-space: nowrap;
+  will-change: transform;
 }
 
 .hover-line {

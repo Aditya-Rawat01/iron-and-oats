@@ -12,7 +12,7 @@ const destinations = [
     href: "/classes",
     eyebrow: "Classes Page",
     title: "Programming With Rhythm.",
-    text: "A dedicated classes page with a responsive weekly calendar, class details, and a clearer booking story for the client build.",
+    text: "A dedicated classes place with weekly calendar classes, details, and a clearer booking story for the client build.",
     accent: "var(--lime)",
   },
 ];
@@ -32,11 +32,10 @@ export default function ExplorePages() {
             >
               BUILT TO GROW
               <br />
-              <span style={{ color: "transparent", WebkitTextStroke: "1px var(--gold)" }}>BEYOND THE LANDING PAGE.</span>
             </h2>
           </div>
-          <p className="max-w-md text-sm leading-relaxed" style={{ color: "var(--cream-dim)" }}>
-            The homepage now acts like the front door, while menu and classes live on their own destination pages with enough depth to present to a client.
+          <p className="max-w-md text-sm leading-relaxed text-wrap" style={{ color: "var(--cream-dim)" }}>
+            The menu and classes live as their own experiences, built with enough depth to support how you fuel and train.
           </p>
         </div>
 
@@ -45,7 +44,7 @@ export default function ExplorePages() {
             <Link
               key={item.href}
               href={item.href}
-              className="group relative overflow-hidden border p-8 transition-transform duration-300 hover:-translate-y-1 lg:p-10"
+              className="group relative overflow-hidden border p-6 transition-transform duration-300 hover:-translate-y-1 lg:p-10"
               style={{ borderColor: "rgba(232,224,208,0.12)", background: "var(--black)" }}
             >
               <div

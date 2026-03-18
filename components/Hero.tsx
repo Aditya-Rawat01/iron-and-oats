@@ -170,7 +170,7 @@ export default function Hero() {
       </div>
 
       <div
-        className="absolute bottom-0 left-0 right-0 z-20 grid grid-cols-4 px-6 py-4"
+        className="absolute bottom-0 left-0 right-0 z-20 grid grid-cols-4 gap-2 px-6 py-4"
         style={{
           borderTop: "1px solid rgba(212,168,83,0.15)",
           background: "rgba(14,13,11,0.75)",

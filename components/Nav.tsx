@@ -118,7 +118,7 @@ export default function Nav() {
             key={link.label}
             href={link.href}
             onClick={() => setMenuOpen(false)}
-            className="font-display text-5xl"
+            className="font-display text-2xl"
             style={{ color: "var(--cream)", animationDelay: `${index * 0.08}s` }}
           >
             {link.label.toUpperCase()}

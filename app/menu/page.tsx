@@ -17,7 +17,7 @@ export default function MenuPage() {
           <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
             <div>
               <div className="mb-4 text-xs uppercase tracking-[0.5em]" style={{ color: "var(--gold)" }}>
-                Dedicated Menu Page
+                Menu Mania
               </div>
               <h1
                 className="font-display leading-none"
@@ -30,8 +30,8 @@ export default function MenuPage() {
             </div>
             <div className="space-y-6">
               <p className="max-w-md text-sm leading-relaxed" style={{ color: "var(--cream-dim)" }}>
-                This page gives the cafe side of the brand room to breathe: product categories, macro-led highlights, service notes, and enough editorial space to feel like a real destination.
-              </p>
+                Built to fuel performance, clean ingredients, balanced macros, and a menu that works as hard as you do.
+                </p>
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/classes"

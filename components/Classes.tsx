@@ -26,11 +26,10 @@ export default function Classes() {
               className="font-display leading-none"
               style={{ fontSize: "clamp(2.8rem, 6.5vw, 6.5rem)", color: "var(--cream)", lineHeight: 0.92 }}
             >
-              NO REST
+              NO REST 
               <br />
-              <span style={{ color: "transparent", WebkitTextStroke: "1px var(--gold)" }}>FOR THE</span>
-              <br />
-              DRIVEN.
+              <span style={{ color: "transparent", WebkitTextStroke: "1px var(--gold)" }}>FOR THE </span>
+               DRIVEN.
             </h2>
           </div>
           <div className="flex flex-shrink-0 gap-2">
@@ -155,7 +154,7 @@ export default function Classes() {
                   <button
                     data-hover
                     disabled={session.spots === 0}
-                    className="whitespace-nowrap px-3 py-1.5 text-xs uppercase tracking-[0.15em] transition-all duration-200 disabled:opacity-30"
+                    className="whitespace-nowrap px-3 py-1.5 text-xs uppercase tracking-[0.15em] transition-all duration-200 disabled:opacity-30 hidden min-[500px]:block"
                     style={{ border: "1px solid rgba(212,168,83,0.4)", color: "var(--gold)" }}
                     onMouseEnter={(e) => {
                       if (!(e.currentTarget as HTMLButtonElement).disabled) {

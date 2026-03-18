@@ -13,11 +13,11 @@ export default function ClassesPage() {
   return (
     <SiteShell>
       <>
-        <section className="px-8 pb-12 pt-32 lg:px-20 lg:pb-16 lg:pt-40" style={{ background: "var(--surface)" }}>
-          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-end">
+        <section className="px-5 pb-12 pt-32 lg:px-20 lg:pb-16 lg:pt-40" style={{ background: "var(--surface)" }}>
+          <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[1.55fr_0.95fr] lg:items-end">
             <div>
               <div className="mb-4 text-xs uppercase tracking-[0.5em]" style={{ color: "var(--gold)" }}>
-                Dedicated Classes Page
+                Dedicated Classes
               </div>
               <h1
                 className="font-display leading-none"
@@ -25,7 +25,7 @@ export default function ClassesPage() {
               >
                 TRAIN ON
                 <br />
-                <span style={{ color: "var(--lime)" }}>A RHYTHM.</span>
+                <span style={{ color: "var(--lime)" }}><span className="hidden md:inline">A</span> RHYTHM.</span>
               </h1>
             </div>
             <div className="space-y-6">
@@ -35,14 +35,14 @@ export default function ClassesPage() {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/menu"
-                  className="px-6 py-3 text-sm uppercase tracking-[0.25em]"
+                  className="px-6 py-3 text-sm uppercase tracking-[0.25em] w-full text-center"
                   style={{ border: "1px solid rgba(232,224,208,0.2)", color: "var(--cream)" }}
                 >
                   View Menu
                 </Link>
                 <Link
                   href="/#membership"
-                  className="px-6 py-3 text-sm uppercase tracking-[0.25em]"
+                  className="px-6 py-3 text-sm uppercase tracking-[0.25em] w-full text-center"
                   style={{ background: "var(--gold)", color: "var(--black)" }}
                 >
                   Join Now

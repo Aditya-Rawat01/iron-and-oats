@@ -31,7 +31,7 @@ function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
           requestAnimationFrame(step);
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 },
     );
     if (ref.current) observer.observe(ref.current);
     return () => observer.disconnect();
@@ -47,31 +47,58 @@ function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
 
 export default function Concept() {
   return (
-    <section id="concept" className="px-8 py-16 lg:px-20 lg:py-24" style={{ background: "var(--black)" }}>
+    <section
+      id="concept"
+      className="px-8 py-16 lg:px-20 lg:py-24"
+      style={{ background: "var(--black)" }}
+    >
       <div className="mx-auto max-w-7xl">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="reveal-block">
-            <div className="mb-5 text-xs uppercase tracking-[0.5em]" style={{ color: "var(--gold)" }}>
+            <div
+              className="mb-5 text-xs uppercase tracking-[0.5em]"
+              style={{ color: "var(--gold)" }}
+            >
               The Concept
             </div>
             <h2
               className="mb-7 font-display leading-none"
-              style={{ fontSize: "clamp(3rem, 6vw, 6.1rem)", color: "var(--cream)", lineHeight: 0.92 }}
+              style={{
+                fontSize: "clamp(3rem, 6vw, 6.1rem)",
+                color: "var(--cream)",
+                lineHeight: 0.92,
+              }}
             >
               WHERE THE
               <br className="lg:hidden" />
-              <span style={{ color: "transparent", WebkitTextStroke: "1px var(--gold)" }}> WORK GETS</span>
+              <span
+                style={{
+                  color: "transparent",
+                  WebkitTextStroke: "1px var(--gold)",
+                }}
+              >
+                {" "}
+                WORK GETS
+              </span>
               <br />
               DONE.
             </h2>
-            <p className="mb-4 max-w-lg font-editorial text-base italic leading-relaxed" style={{ color: "var(--cream-dim)" }}>
-              Iron & Oats was built for the ones who don&apos;t separate discipline from pleasure.
-              Two worlds under one roof — a fully equipped training floor and a kitchen that
-              actually understands what your body just went through.
+            <p
+              className="mb-4 max-w-lg font-editorial text-base italic leading-relaxed"
+              style={{ color: "var(--cream-dim)" }}
+            >
+              Iron & Oats was built for the ones who don&apos;t separate
+              discipline from pleasure. Two worlds under one roof — a fully
+              equipped training floor and a kitchen that actually understands
+              what your body just went through.
             </p>
-            <p className="max-w-lg text-sm leading-relaxed" style={{ color: "var(--cream-dim)", opacity: 0.7 }}>
-              Every menu item is engineered around macros that matter. Every class is designed to
-              break limits. And the espresso? It hits exactly as hard as it should.
+            <p
+              className="max-w-lg text-sm leading-relaxed"
+              style={{ color: "var(--cream-dim)", opacity: 0.7 }}
+            >
+              Every menu item is engineered around macros that matter. Every
+              class is designed to break limits. And the espresso? It hits
+              exactly as hard as it should.
             </p>
             <Link
               href="/menu"
@@ -80,13 +107,15 @@ export default function Concept() {
               style={{ color: "var(--lime)" }}
             >
               Explore The Menu{" "}
-              <span className="inline-block transition-transform duration-200 group-hover:translate-x-2">→</span>
+              <span className="inline-block transition-transform duration-200 group-hover:translate-x-2">
+                →
+              </span>
             </Link>
           </div>
 
           <div className="relative reveal-block">
             <div
-              className="hidden select-none text-center font-display leading-none md:block"
+              className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 select-none text-center font-display leading-none"
               style={{
                 fontSize: "clamp(8rem, 16vw, 16rem)",
                 color: "transparent",
@@ -95,24 +124,32 @@ export default function Concept() {
             >
               I&O
             </div>
-            <div className="grid gap-4 md:absolute md:inset-0 md:flex md:flex-col md:items-center md:justify-center md:gap-6 md:px-8">
+            <div className="flex flex-col items-center gap-4 md:gap-6 md:px-8">
               {stats.map((s) => (
                 <div
                   key={s.label}
-                  className="rounded-[1.5rem] border px-5 py-5 text-center md:min-w-[220px] md:border-0 md:bg-transparent md:px-0 md:py-0"
+                  className="rounded-[1.5rem] border py-10 w-full text-center md:min-w-[220px] md:border-0 md:bg-transparent"
                   style={{
                     borderColor: "rgba(212,168,83,0.12)",
                     background: "rgba(28,26,22,0.65)",
                     backdropFilter: "blur(8px)",
                   }}
                 >
-                  <div className="font-display text-4xl sm:text-5xl" style={{ color: "var(--gold)" }}>
+                  <div
+                    className="font-display text-4xl sm:text-5xl"
+                    style={{ color: "var(--gold)" }}
+                  >
                     <AnimatedNumber value={s.value} suffix={s.suffix} />
                   </div>
-                  <div className="mt-2 text-[11px] uppercase tracking-[0.22em] sm:text-xs sm:tracking-[0.28em]" style={{ color: "var(--cream-dim)" }}>
+                  <div
+                    className="mt-2 text-[11px] uppercase tracking-[0.22em] sm:text-xs sm:tracking-[0.28em]"
+                    style={{ color: "var(--cream-dim)" }}
+                  >
                     {s.label}
                     {"detail" in s && s.detail ? (
-                      <span className="block pt-1 tracking-[0.18em] opacity-80">{s.detail}</span>
+                      <span className="block pt-1 tracking-[0.18em] opacity-80">
+                        {s.detail}
+                      </span>
                     ) : null}
                   </div>
                 </div>
